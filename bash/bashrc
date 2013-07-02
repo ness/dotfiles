@@ -1,0 +1,28 @@
+#############
+# ssh 
+function ssh_add_conditional {
+	ssh-add -l > /dev/null
+	if [ ! $? ]; then
+		ssh-add;
+	fi
+}
+
+alias ssh="ssh_add_conditional; ssh"
+
+
+############
+# virtualenv
+export WORKON_HOME=~/code/python/virtualenv
+source ~/.local/bin/virtualenvwrapper.sh
+
+############
+# git
+alias gits='git status'
+alias gitd='git diff'
+
+############
+# various 
+PATH=~/bin:$PATH
+PS1='[\u@\h \W]\$ '
+alias ls='ls --color=auto'
+
