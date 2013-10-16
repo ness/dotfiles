@@ -21,8 +21,13 @@ alias gits='git status'
 alias gitd='git diff'
 
 ############
+# xrandr
+alias vgaoff='xrandr --output VGA1 --off'
+alias vgaon='xrandr --output VGA1 --left-of LVDS1 --auto'
+
+############
 # various 
 PATH=~/bin:$PATH
 PS1='[\u@\h \W]\$ '
 alias ls='ls --color=auto'
-
+alias youdl='youtube-dl -f 18'
