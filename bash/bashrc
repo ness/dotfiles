@@ -30,4 +30,5 @@ alias vgaon='xrandr --output VGA1 --left-of LVDS1 --auto'
 PATH=~/bin:$PATH
 PS1='[\u@\h \W]\$ '
 alias ls='ls --color=auto'
-alias youdl='youtube-dl -f 18'
+alias ydl='youtube-dl -f 18 --title'
+alias ydlm='youtube-dl -f 18 --title --extract-audio --audio-format vorbis'
