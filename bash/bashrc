@@ -19,6 +19,9 @@ source ~/.local/bin/virtualenvwrapper.sh
 # git
 alias gits='git status'
 alias gitd='git diff'
+alias gita='git add'
+alias gitau='git add -u'
+alias gitc='git commit'
 
 ############
 # xrandr
