@@ -36,3 +36,5 @@ PS1='[\u@\h \W]\$ '
 alias ls='ls --color=auto'
 alias ydl='youtube-dl -f 18 --title --restrict-filenames'
 alias ydlm='youtube-dl -f 18 --title --restrict-filenames --extract-audio --audio-format vorbis'
+
+alias serve_dir='python -m http.server 8081'
