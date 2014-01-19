@@ -1,4 +1,10 @@
 #############
+# history
+export HISTIGNORE="pwd:ls:ls -l:cd:[bf]g:exit"
+export HISTCONTROL=erasedups
+export HISTTIMEFORMAT="%F %T "
+
+#############
 # ssh 
 function ssh_add_conditional {
 	ssh-add -l > /dev/null
