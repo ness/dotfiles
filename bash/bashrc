@@ -29,6 +29,7 @@ alias gita='git add'
 alias gitau='git add -u'
 alias gitc='git commit'
 alias gitct='git checkout'
+alias gitl='git log'
 
 ############
 # xrandr
