@@ -46,9 +46,12 @@ alias vgaon='xrandr --output VGA1 --left-of LVDS1 --auto'
 # various 
 PATH=~/bin:$PATH
 PATH=~/.local/bin/:$PATH
-PS1='[\u@\h \W]\$ '
+PS1='\[\033[0;32m\][ \u@\h \t ]\n\[\033[0m\]< \W > \$ '
+
 alias ls='ls --color=auto'
 alias ydl='youtube-dl -f 18 --title --restrict-filenames'
 alias ydlm='youtube-dl -f 18 --title --restrict-filenames --extract-audio --audio-format vorbis'
 
 alias serve_dir='python -m http.server 8081'
+
+alias sync_audio='rsync --delete -a --progress ~/audio/* /mnt/audio_sync/'
