@@ -17,6 +17,7 @@ clean_bash:
 
 xorg:
 	ln -s $(LN_OPTS) $(DOTDIR)/Xresources ~/.Xresources
+	ln -s $(LN_OPTS) $(DOTDIR)/Xresources.d ~/.Xresources.d
 	ln -s $(LN_OPTS) $(DOTDIR)/xinitrc ~/.xinitrc
 
 clean_xorg:
