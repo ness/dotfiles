@@ -24,13 +24,18 @@ VIRTUALENVWRAPPER_GLOBAL=/usr/bin/virtualenvwrapper.sh
 if [ -e $VIRTUALENVWRAPPER_LOCAL ]; then
 	source $VIRTUALENVWRAPPER_LOCAL
 else
-	source $VIRTUALENVWRAPPER_GLOBAL
+	if [ -e $VIRTUALENVWRAPPER_LOCAL ]; then
+		source $VIRTUALENVWRAPPER_GLOBAL
+	else
+		echo "Could not source virtualenv script"
+	fi
 fi
 
 ############
 # git
 alias gits='git status'
 alias gitd='git diff'
+alias gitds='git diff --staged'
 alias gita='git add'
 alias gitau='git add -u'
 alias gitc='git commit'
