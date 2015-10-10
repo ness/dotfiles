@@ -1,4 +1,4 @@
-URxvt.font: xft:terminus:pixelsize=14:antialias=false
+URxvt.font: xft:Inconsolata\-g:pixelsize=14:antialias=false
 URxvt.scrollstyle: plain
 URxvt.scrollBar: false
 URxvt.saveLines: 10000
