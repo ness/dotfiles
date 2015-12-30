@@ -1,4 +1,4 @@
-.PHONY: all bash xorg clean_all
+.PHONY: all bash xorg clean_all ctags ctags_clean
 
 DOTDIR:=$(shell pwd)
 LN_OPTS:=-i
@@ -29,3 +29,10 @@ tmux:
 
 clean_tmux:
 	rm ~/.tmux.conf
+
+ctags:
+	ln -s $(LN_OPTS) $(DOTDIR)/ctags ~/.ctags
+
+ctags_clean:
+	rm ~/.ctags
+
