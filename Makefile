@@ -36,3 +36,9 @@ ctags:
 ctags_clean:
 	rm ~/.ctags
 
+isort:
+	ln -s $(LN_OPTS) $(DOTDIR)/isort ~/.isort.cfg
+
+isort_clean:
+	rm ~/.isort.cfg
+
