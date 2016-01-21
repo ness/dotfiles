@@ -30,6 +30,7 @@ else
 		echo "Could not source virtualenv script"
 	fi
 fi
+export PYTHONTOOLS_VENV=$WORKON_HOME/editor_tools/
 
 ############
 # git
